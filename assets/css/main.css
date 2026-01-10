@@ -169,6 +169,29 @@ h6 {
   color: var(--heading-color);
 }
 
+/* Responsive: hide textual site name when space is limited so only the logo image remains visible */
+@media (max-width: 576px) {
+  /* Keep the logo image visible and slightly reduce its size */
+  .header .logo img {
+    max-height: 34px;
+    margin-right: 0.5rem;
+  }
+
+  /* Hide the textual site name to prevent wrapping or overflow in tight navbar widths */
+  .header .logo .sitename {
+    display: none !important;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+/* Utility: if you ever want to hide the image and keep only text on small screens */
+.logo-text-only .logo img {
+  display: none !important;
+}
+
 .header .logo span {
   color: var(--accent-color);
   font-size: 32px;
