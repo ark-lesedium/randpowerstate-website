@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://randpowerstate.co.za/sitemap.xml
