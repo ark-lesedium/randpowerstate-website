@@ -18,14 +18,28 @@
   /* Color for headings, subheadings and title throughout the website */
   --accent-color: #3b82f6;
   /* Accent color (ambient blue) used for buttons, links, icons and hover states */
-  --surface-color: #131417;
-  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: rgba(19, 20, 23, 0.82);
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. Kept translucent so the gradient backdrop glows through card surfaces. */
   --contrast-color: #ffffff;
   /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   --hairline-color: rgba(255, 255, 255, 0.08);
   /* Thin structural border used for the technical/blueprint grid lines throughout the site */
   --footer-background-color: #050505;
   /* Referenced by .footer-top/.footer-newsletter color-mix() calls below the fold */
+
+  /* Gradient-mesh accent palette (JetBrains-style backdrop blobs) - kept
+     desaturated/dark so it reads as a soft wash behind the near-black
+     surface rather than a bright poster. */
+  --gradient-blue: #3b82f6;
+  --gradient-violet: #7c3aed;
+  --gradient-teal: #0d9488;
+
+  /* Curvy card system - replaces the old sharpened/zero-radius look */
+  --radius-card: 22px;
+  --radius-chip: 14px;
+  --radius-btn: 12px;
+  --radius-input: 12px;
+  --radius-pill: 999px;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -49,14 +63,14 @@
 
 .light-background {
   --background-color: #101114;
-  --surface-color: #17181c;
+  --surface-color: rgba(23, 24, 28, 0.82);
 }
 
 .dark-background {
   --background-color: #000000;
   --default-color: #b8bcc4;
   --heading-color: #ffffff;
-  --surface-color: #0d0d0e;
+  --surface-color: rgba(13, 13, 14, 0.82);
   --contrast-color: #ffffff;
 }
 
@@ -71,6 +85,14 @@
 body {
   color: var(--default-color);
   background-color: var(--background-color);
+  background-image:
+    radial-gradient(ellipse 60% 50% at 12% 8%, color-mix(in srgb, var(--gradient-violet), transparent 68%) 0%, color-mix(in srgb, var(--gradient-violet), transparent 88%) 40%, transparent 70%),
+    radial-gradient(ellipse 55% 45% at 88% 22%, color-mix(in srgb, var(--gradient-blue), transparent 70%) 0%, color-mix(in srgb, var(--gradient-blue), transparent 90%) 40%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 15% 78%, color-mix(in srgb, var(--gradient-teal), transparent 74%) 0%, color-mix(in srgb, var(--gradient-teal), transparent 90%) 40%, transparent 70%),
+    radial-gradient(ellipse 55% 45% at 90% 92%, color-mix(in srgb, var(--gradient-violet), transparent 76%) 0%, color-mix(in srgb, var(--gradient-violet), transparent 92%) 40%, transparent 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   font-family: var(--default-font);
 }
 
@@ -803,7 +825,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: color-mix(in srgb, var(--background-color) 80%, transparent);
   padding: 60px 0;
   scroll-margin-top: 80px;
   overflow: clip;
@@ -1949,6 +1971,55 @@ section,
   font-size: 15px;
 }
 
+/*--------------------------------------------------------------
+# Case Study Preview Cards (homepage teaser grid)
+--------------------------------------------------------------*/
+.case-study-card {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 36px 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study-card .case-study-card-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  font-family: var(--heading-font);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--heading-color);
+}
+
+.case-study-card p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--default-color);
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.case-study-card .case-study-card-name {
+  display: block;
+  font-family: var(--mono-font);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--heading-color);
+  margin-bottom: 16px;
+}
+
+.case-study-card .case-study-card-link {
+  font-family: var(--heading-font);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: var(--accent-color);
+}
+
 .case-study-quote {
   border-left: 3px solid var(--accent-color);
   padding: 10px 0 10px 25px;
@@ -2418,22 +2489,22 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Palantir-Inspired Theme Enhancements
-# Sharp edges, high-contrast type, hairline grid structure, and
-# restrained use of the accent color on top of the dark palette
-# defined at the top of this file.
+# Gradient-Mesh Theme Enhancements
+# Soft blurred color blobs behind the dark palette, curvy cards,
+# high-contrast type, and restrained use of the accent color on
+# top of the base defined at the top of this file.
 --------------------------------------------------------------*/
 
-/* Kill Bootstrap's rounded-corner defaults everywhere (buttons, inputs,
+/* Round Bootstrap's corner defaults everywhere (buttons, inputs,
    accordions, cards, etc. all read off these custom properties in 5.3). */
 :root {
-  --bs-border-radius: 0;
-  --bs-border-radius-sm: 0;
-  --bs-border-radius-lg: 0;
-  --bs-border-radius-xl: 0;
-  --bs-border-radius-xxl: 0;
-  --bs-border-radius-2xl: 0;
-  --bs-border-radius-pill: 0;
+  --bs-border-radius: var(--radius-card);
+  --bs-border-radius-sm: var(--radius-input);
+  --bs-border-radius-lg: var(--radius-card);
+  --bs-border-radius-xl: var(--radius-card);
+  --bs-border-radius-xxl: var(--radius-card);
+  --bs-border-radius-2xl: var(--radius-card);
+  --bs-border-radius-pill: var(--radius-pill);
 }
 
 ::selection {
@@ -2462,21 +2533,52 @@ section:first-of-type,
   border-top: none;
 }
 
-/* Sharpen elements that had hardcoded radii in the original template */
+/* Curvy card treatment - soft rounded corners across every boxed element */
 .services .service-item,
-.services .service-item .icon,
-.portfolio .portfolio-filters li,
 .process .process-item,
 .faq .accordion-item,
 .contact .mailto-contact-form,
 .service-details .service-box,
 .service-details .help-box,
+.service-details .services-list,
 .legal-content .legal-notice,
+.insights-grid .insight-card,
+.testimonials .testimonial-item,
+.contact .map-panel,
+.contact .map-panel-lg,
+.case-study-card,
+.team .team-member {
+  border-radius: var(--radius-card) !important;
+  overflow: hidden;
+}
+
+.service-details .services-list a {
+  border-radius: var(--radius-input) !important;
+}
+
+.services .service-item .icon,
+.hero .icon-box {
+  border-radius: var(--radius-chip) !important;
+}
+
 .error-404 .btn-home,
 .call-to-action .cta-btn,
 .header .btn-getstarted,
+.contact .mailto-contact-form button[type=submit] {
+  border-radius: var(--radius-btn) !important;
+}
+
+.contact .mailto-contact-form .form-control,
+.contact .mailto-contact-form textarea {
+  border-radius: var(--radius-input) !important;
+}
+
+.portfolio .portfolio-filters li {
+  border-radius: var(--radius-pill) !important;
+}
+
 .navmenu ul {
-  border-radius: 0 !important;
+  border-radius: var(--radius-card) !important;
 }
 
 /* Monospace treatment for eyebrow labels, breadcrumbs, and other data-like
@@ -2610,18 +2712,25 @@ section:first-of-type,
   }
 }
 
-/* Cards lift slightly on hover across the site */
+/* Cards lift slightly on hover across the site, with a soft gradient-tinted glow */
 .process .process-item,
 .insights-grid .insight-card,
 .faq .accordion-item,
+.services .service-item,
+.testimonials .testimonial-item,
+.case-study-card,
 .case-study-meta {
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .process .process-item:hover,
-.insights-grid .insight-card:hover {
+.insights-grid .insight-card:hover,
+.services .service-item:hover,
+.testimonials .testimonial-item:hover,
+.case-study-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent-color);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 30%);
+  box-shadow: 0 20px 45px -20px color-mix(in srgb, var(--gradient-violet), transparent 55%);
 }
 
 /* Service icon: subtle scale + rotate on the parent card hover */
