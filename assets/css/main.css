@@ -1051,17 +1051,6 @@ body.scrolled #header {
     radial-gradient(circle at 60% 0%, rgba(34, 211, 238, 0.18), transparent 35%);
 }
 
-.call-to-action::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to bottom, var(--color-bg), transparent 140px),
-    linear-gradient(to top, var(--color-bg), transparent 140px);
-  opacity: 0.6;
-  pointer-events: none;
-}
-
 .call-to-action .container {
   position: relative;
   z-index: 1;
@@ -1149,7 +1138,11 @@ body.scrolled #header {
 .section-dark {
   position: relative;
   overflow: hidden;
-  background: #080a16 url("../img/mesh-dark.svg") center / cover no-repeat;
+  background-color: #080a16;
+  background-image: url("../img/bg-circuit.svg"), url("../img/mesh-dark.svg");
+  background-repeat: repeat, no-repeat;
+  background-size: 140px 140px, cover;
+  background-position: center, center;
 }
 
 .section-dark::before {
@@ -2610,4 +2603,43 @@ body.scrolled #header {
   text-transform: uppercase;
   color: var(--color-primary-dark);
   margin-top: 32px;
+}
+
+/* =========================================================
+   Section background textures — real image resources, not just
+   the ambient gradient repeated everywhere. Faded top/bottom so
+   the texture itself has no hard edge.
+   ========================================================= */
+.bg-tex-dots,
+.bg-tex-circuit {
+  position: relative;
+}
+
+.bg-tex-dots::before,
+.bg-tex-circuit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 82%, transparent);
+}
+
+.bg-tex-dots::before {
+  background-image: url("../img/bg-dotgrid.svg");
+  background-repeat: repeat;
+  background-size: 36px 36px;
+}
+
+.bg-tex-circuit::before {
+  background-image: url("../img/bg-circuit.svg");
+  background-repeat: repeat;
+  background-size: 140px 140px;
+}
+
+.bg-tex-dots > *,
+.bg-tex-circuit > * {
+  position: relative;
+  z-index: 1;
 }

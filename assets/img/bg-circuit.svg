@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 140 140">
+  <g stroke="#3b82f6" stroke-opacity="0.28" stroke-width="1" fill="none">
+    <line x1="0" y1="70" x2="140" y2="70" />
+    <line x1="70" y1="0" x2="70" y2="140" />
+    <polyline points="70,70 108,70 108,32" />
+    <polyline points="70,70 32,70 32,108" />
+  </g>
+  <circle cx="70" cy="70" r="3" fill="#3b82f6" fill-opacity="0.4" />
+  <circle cx="108" cy="32" r="2.4" fill="#22d3ee" fill-opacity="0.4" />
+  <circle cx="32" cy="108" r="2.4" fill="#22d3ee" fill-opacity="0.4" />
+  <circle cx="0" cy="70" r="2" fill="#3b82f6" fill-opacity="0.3" />
+  <circle cx="140" cy="70" r="2" fill="#3b82f6" fill-opacity="0.3" />
+  <circle cx="70" cy="0" r="2" fill="#3b82f6" fill-opacity="0.3" />
+  <circle cx="70" cy="140" r="2" fill="#3b82f6" fill-opacity="0.3" />
+</svg>
