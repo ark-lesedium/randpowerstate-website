@@ -11,7 +11,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://randpowerstate.co.za/service-details.html</loc>
+    <loc>https://randpowerstate.co.za/services.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://randpowerstate.co.za/case-studies.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,38 +41,8 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://randpowerstate.co.za/case-study-astron-energy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/case-study-car-bakkie-city.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/case-study-ebbies-fashion-house.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/case-study-hafmed-clinics.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/careers.html</loc>
+    <loc>https://randpowerstate.co.za/contact.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/privacy-policy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://randpowerstate.co.za/terms-of-service.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

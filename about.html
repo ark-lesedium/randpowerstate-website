@@ -5,26 +5,24 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>About Us — RANDPOWERSTATE</title>
-  <meta name="description" content="RANDPOWERSTATE (PTY) LTD is a Kimberley-based digital systems and IT integration company. Learn about our mission, approach, and values.">
-  <meta name="author" content="RANDPOWERSTATE (PTY) LTD">
-  <link rel="canonical" href="https://randpowerstate.co.za/about.html">
-  <meta name="theme-color" content="#3b82f6">
+  <meta name="description" content="RANDPOWERSTATE is a systems-first digital partner based in Kimberley, South Africa — building secure, reliable digital platforms for real businesses.">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Facebook, LinkedIn, WhatsApp, etc. -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://randpowerstate.co.za/about.html">
-  <meta property="og:title" content="About Us — RANDPOWERSTATE">
-  <meta property="og:description" content="RANDPOWERSTATE (PTY) LTD is a Kimberley-based digital systems and IT integration company. Learn about our mission, approach, and values.">
-  <meta property="og:image" content="https://randpowerstate.co.za/assets/img/hero-bg.jpg">
-  <meta property="og:locale" content="en_ZA">
   <meta property="og:site_name" content="RANDPOWERSTATE">
+  <meta property="og:title" content="About Us — RANDPOWERSTATE">
+  <meta property="og:description" content="RANDPOWERSTATE is a systems-first digital partner based in Kimberley, South Africa — building secure, reliable digital platforms for real businesses.">
+  <meta property="og:image" content="https://randpowerstate.co.za/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://randpowerstate.co.za/about.html">
   <meta name="twitter:title" content="About Us — RANDPOWERSTATE">
-  <meta name="twitter:description" content="RANDPOWERSTATE (PTY) LTD is a Kimberley-based digital systems and IT integration company. Learn about our mission, approach, and values.">
-  <meta name="twitter:image" content="https://randpowerstate.co.za/assets/img/hero-bg.jpg">
+  <meta name="twitter:description" content="RANDPOWERSTATE is a systems-first digital partner based in Kimberley, South Africa — building secure, reliable digital platforms for real businesses.">
+  <meta name="twitter:image" content="https://randpowerstate.co.za/assets/img/og-image.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -41,15 +39,42 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RANDPOWERSTATE (PTY) LTD",
+    "image": "https://randpowerstate.co.za/assets/img/og-image.png",
+    "url": "https://randpowerstate.co.za/about.html",
+    "telephone": "+27788149120",
+    "email": "info@randpowerstate.co.za",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6 Gunning Street",
+      "addressLocality": "Kimberley",
+      "addressRegion": "Northern Cape",
+      "postalCode": "8301",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -28.7307462,
+      "longitude": 24.7528374
+    },
+    "areaServed": "South Africa",
+    "description": "Digital systems, IT integration, automation, and cybersecurity for businesses in Kimberley and across South Africa."
+  }
+  </script>
+
 </head>
 
-<body class="about-page">
+<body>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -57,221 +82,168 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
         <img src="assets/img/logo.png" alt="RANDPOWERSTATE Logo">
         <h1 class="sitename">RANDPOWERSTATE</h1>
-        <span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero">Home<br></a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
           <li><a href="insights.html">Insights</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Get Started</a>
+      <a class="btn-getstarted" href="contact.html">Get Started</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>About Us</h1>
-              <p class="mb-0">A Kimberley-based team building the digital backbone modern businesses run on.</p>
+    <!-- About Hero -->
+    <section class="page-hero">
+      <div class="container" data-aos="fade-up">
+        <span class="eyebrow"><i class="bi bi-people"></i> About Us</span>
+        <h1>We build digital systems that businesses can actually rely on.</h1>
+        <p>Based in Kimberley, South Africa — RANDPOWERSTATE designs, integrates, and manages the digital
+          backbone that franchises, clinics, dealerships, and independent businesses run on every day.</p>
+      </div>
+    </section><!-- /About Hero -->
+
+    <!-- Mission Section -->
+    <section class="section">
+      <div class="container">
+        <div class="mission-split" data-aos="fade-up">
+          <div class="mission-text">
+            <span class="eyebrow">Our Mission</span>
+            <h2>We build systems, not just websites.</h2>
+            <p>
+              Most agencies stop at "it looks good." We focus on designing and integrating secure, scalable
+              digital systems that support real business operations — not just online presence. That means
+              structure over shortcuts, and long-term digital capability over quick, disposable fixes.
+            </p>
+            <p>
+              Our approach is systems-first and process-driven. We work with businesses that value reliability
+              and structure, delivering solutions that improve efficiency, visibility, and operational control —
+              from a single website to fully integrated, automated, AI-enabled operations.
+            </p>
+          </div>
+          <div class="mission-panel">
+            <span class="big-num">50+</span>
+            <span class="big-label">Businesses trust us with their digital operations</span>
+            <hr>
+            <div class="mini-stats">
+              <div><strong>120+</strong><span>Projects delivered</span></div>
+              <div><strong>3,500+</strong><span>Hours of support</span></div>
+              <div><strong>8</strong><span>Team members</span></div>
             </div>
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+    </section><!-- /Mission Section -->
 
-    <section id="mission" class="section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-lg-9 text-center">
-            <span class="section-title-tag" style="display:block; font-family: var(--heading-font); font-size:13px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color: var(--accent-color); margin-bottom: 16px;">Our Mission</span>
-            <h2 style="font-size: 40px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.25;">
-              We build the website, and the software behind it, so your business runs smoother — not a site that
-              just sits there looking nice.
-            </h2>
+    <!-- Values Bento Section -->
+    <section class="section section-alt">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">How We Think</span>
+        <h2>The principles behind every system we build</h2>
+        <p>These aren't wall-poster values — they're the filters every project decision runs through.</p>
+      </div>
+
+      <div class="container">
+        <div class="bento-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="bento-item span-2 span-2row accent">
+            <div class="bento-icon"><i class="bi bi-shield-check"></i></div>
+            <h4>Reliability First</h4>
+            <p>We design for uptime and long-term stability, not quick wins that break under real-world load.
+              Every system is built to still be working — and still be understandable — years from now.</p>
+          </div>
+          <div class="bento-item span-2">
+            <div class="bento-icon"><i class="bi bi-lock"></i></div>
+            <h4>Security by Design</h4>
+            <p>Cybersecurity fundamentals are built in from day one, not bolted on after something goes wrong.</p>
+          </div>
+          <div class="bento-item">
+            <div class="bento-icon"><i class="bi bi-cpu"></i></div>
+            <h4>Practical AI</h4>
+            <p>AI where it earns its place — not hype for hype's sake.</p>
+          </div>
+          <div class="bento-item">
+            <div class="bento-icon"><i class="bi bi-chat-square-text"></i></div>
+            <h4>Transparent Communication</h4>
+            <p>You always know what's being built, and why.</p>
+          </div>
+          <div class="bento-item span-2">
+            <div class="bento-icon"><i class="bi bi-diagram-3"></i></div>
+            <h4>Process-Driven Delivery</h4>
+            <p>The same structured approach for every engagement, regardless of size — not improvisation.</p>
+          </div>
+          <div class="bento-item span-2">
+            <div class="bento-icon"><i class="bi bi-geo-alt"></i></div>
+            <h4>Local & Hands-On</h4>
+            <p>Based in Kimberley, working closely with every client — not a call centre in another timezone.</p>
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- /Values Bento Section -->
 
-    <section id="approach" class="about section light-background">
+    <!-- Stats Section -->
+    <section class="stats section section-dark">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Proven Impact</span>
+        <h2>Digital systems that deliver measurable results</h2>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6">
-            <img src="assets/img/features-bg.jpg" class="img-fluid" alt="Digital systems architecture illustration" loading="lazy">
+        <div class="stats-band">
+          <div class="stat-tile">
+            <i class="bi bi-emoji-smile"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Satisfied Clients</span>
+            <span class="sub">across various industries</span>
           </div>
-          <div class="col-lg-6 content">
-            <h3>We Ask "What Does This Need to Do?" Before "What Should It Look Like?"</h3>
-            <p class="fst-italic">
-              Most agencies sell you a website and move on. We stick around to build and maintain the software
-              working behind it — the part that actually saves your team time.
-            </p>
-            <p>
-              RANDPOWERSTATE (PTY) LTD is based in Kimberley, Northern Cape, and builds websites, business software,
-              and IT systems for retail stores, restaurants and cafés, clinics, fuel stations, and franchise
-              operators. These are businesses that need more than a brochure site — they need a website and back-end
-              systems that can handle real daily traffic, real customer data, and real staff using them every day.
-            </p>
-            <p>
-              Before we design anything, we ask what the system needs to actually do for your business, day to day —
-              who'll use it, what it needs to connect to, and what happens if it goes down. Getting that right comes
-              first. How it looks comes after.
-            </p>
+          <div class="stat-tile">
+            <i class="bi bi-journal-richtext"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Projects Delivered</span>
+            <span class="sub">from websites to integrated systems</span>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="difference" class="section">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-lg-8">
-            <span style="display:block; font-family: var(--heading-font); font-size:13px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color: var(--accent-color); margin-bottom: 16px;">The Difference Structure Makes</span>
-            <h3 style="font-weight: 800; letter-spacing: -0.02em;">What Usually Happens vs. What We Do Instead</h3>
+          <div class="stat-tile">
+            <i class="bi bi-headset"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Hours of Support</span>
+            <span class="sub">ensuring operational reliability</span>
           </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-6">
-            <h4 style="font-weight:700; margin-bottom: 16px; color: color-mix(in srgb, var(--default-color), transparent 15%);">The Common Approach</h4>
-            <ul style="list-style:none; padding:0;">
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-x-circle" style="color: color-mix(in srgb, var(--default-color), transparent 40%); margin-right: 10px; font-size: 20px;"></i> The website goes live, then gets forgotten until something breaks.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-x-circle" style="color: color-mix(in srgb, var(--default-color), transparent 40%); margin-right: 10px; font-size: 20px;"></i> Every new tool means someone re-typing the same information by hand.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-x-circle" style="color: color-mix(in srgb, var(--default-color), transparent 40%); margin-right: 10px; font-size: 20px;"></i> Security becomes a priority only after something has already gone wrong.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-x-circle" style="color: color-mix(in srgb, var(--default-color), transparent 40%); margin-right: 10px; font-size: 20px;"></i> One extra request means finding and briefing a whole new freelancer.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-            <h4 style="font-weight:700; margin-bottom: 16px; color: var(--accent-color);">How We Work</h4>
-            <ul style="list-style:none; padding:0;">
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-check2-all" style="color: var(--accent-color); margin-right: 10px; font-size: 20px;"></i> We stay on after launch to monitor, maintain, and adjust the system.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-check2-all" style="color: var(--accent-color); margin-right: 10px; font-size: 20px;"></i> Your tools are connected, so information updates itself.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-check2-all" style="color: var(--accent-color); margin-right: 10px; font-size: 20px;"></i> Security is built in from the first line of code, not added later.</li>
-              <li style="display:flex; padding: 10px 0;"><i class="bi bi-check2-all" style="color: var(--accent-color); margin-right: 10px; font-size: 20px;"></i> One team handles the website, the systems, and the support behind it.</li>
-            </ul>
+          <div class="stat-tile">
+            <i class="bi bi-people"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span></span>
+            <span class="label">Dedicated Team Members</span>
+            <span class="sub">focused on client success</span>
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- /Stats Section -->
 
-    <section id="values" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>What We Value</h2>
-        <p>How We Operate</p>
-      </div>
-
-      <div class="container">
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-shield-lock"></i></div>
-              <h3>Security by Design</h3>
-              <p>Secure logins, controlled access, and backups go in from the first day of building — not added
-                later once there's already a problem.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-diagram-3"></i></div>
-              <h3>Structure Over Shortcuts</h3>
-              <p>We build around how your team actually works day to day, not for what looks impressive in a
-                sales demo.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-cpu"></i></div>
-              <h3>Practical Automation</h3>
-              <p>We only add AI or automation where it removes real manual work — not just because it sounds
-                impressive.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-people"></i></div>
-              <h3>Long-Term Partnership</h3>
-              <p>We don't disappear after launch — we keep watching, fixing, and adjusting your systems as your
-                business grows.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="call-to-action-mid" class="call-to-action section dark-background">
-      <img src="assets/img/testimonials-bg.jpg" alt="" loading="lazy">
+    <!-- CTA -->
+    <section class="call-to-action section">
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Curious What This Looks Like for Your Business?</h3>
-              <p>We can usually tell within one conversation whether we're a good fit for what you need — and if
-                we're not, we'll say so.</p>
-              <a class="cta-btn" href="index.html#contact">Start the Conversation</a>
+              <h3>Want systems built the way we've just described?</h3>
+              <p>Tell us what you're working with today, and we'll show you what a reliable system looks like.</p>
+              <a class="cta-btn" href="contact.html">Get Started Today</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="team-note" class="section light-background">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8">
-            <h3 style="font-weight: 800; letter-spacing: -0.02em;">A Small, Focused Team</h3>
-            <p>
-              We deliberately stay small. It means every project gets direct attention from the people actually
-              building it, not handed off through account layers. As we grow, this page will introduce the people
-              behind the work.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="call-to-action" class="call-to-action section dark-background">
-      <img src="assets/img/cta-bg.jpg" alt="" loading="lazy">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Want to Work With Us?</h3>
-              <p>Tell us what your business runs on today, and where it's breaking down. We'll take it from there.</p>
-              <a class="cta-btn" href="index.html#contact">Get In Touch</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section><!-- /CTA -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+  <footer id="footer" class="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -285,87 +257,68 @@
               <p class="mt-3"><strong>Phone:</strong> <span>+27 78 814 9120</span></p>
               <p><strong>Email:</strong> <span>info@randpowerstate.co.za</span></p>
             </div>
-            <!-- TODO: add real social media URLs below when accounts are set up -->
             <div class="social-links d-flex mt-4">
-              <a href="#" aria-label="Twitter / X (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Facebook (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/27788149120" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="tel:+27788149120" aria-label="Call us"><i class="bi bi-telephone"></i></a>
+              <a href="mailto:info@randpowerstate.co.za" aria-label="Email us"><i class="bi bi-envelope"></i></a>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about.html"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio"> Portfolio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="insights.html"> Insights</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="careers.html"> Careers</a></li>
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="case-studies.html"><i class="bi bi-chevron-right"></i> Case Studies</a></li>
+              <li><a href="insights.html"><i class="bi bi-chevron-right"></i> Insights</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#digital-platforms"> Digital Platforms & Web Systems</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#it-systems-integration"> IT Systems Integration</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#workflow-automation"> Workflow Automation & Process Digitisation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#ai-business-intelligence"> AI-Enabled Business Intelligence</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#cybersecurity-infrastructure"> Cybersecurity & Infrastructure Support</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Digital Platforms & Web Systems</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> IT Systems Integration</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Workflow Automation</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> AI-Enabled Business Intelligence</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Cybersecurity & Infrastructure</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>RANDPOWERSTATE (PTY) LTD</h4>
-            <p>The future depend on you!</p>
+            <p>The future depends on you.</p>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="copyright">
-      <div class="container d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-2">
-        <p class="mb-0">© <span>Copyright</span> <strong class="px-1 sitename">RANDPOWERSTATE (PTY) LTD</strong> <span>All Rights
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">RANDPOWERSTATE (PTY) LTD</strong> <span>All Rights
             Reserved</span></p>
-        <p class="mb-0 copyright-legal-links">
-          <a href="terms-of-service.html">Terms of Service</a>
-          <span class="divider">/</span>
-          <a href="privacy-policy.html">Privacy Policy</a>
-        </p>
       </div>
     </div>
-
   </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/27788149120?text=Hi%20RANDPOWERSTATE%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20services."
+    target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
-
-<!-- WhatsApp Chat Overlay -->
-<!-- Opens WhatsApp chat with the configured phone number -->
-<a href="https://wa.me/27788149120?text=Hello%20Randpowerstate" target="_blank" rel="noopener noreferrer"
-  class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <span class="whatsapp-label">Chat on WhatsApp</span>
-  <i class="bi bi-whatsapp" aria-hidden="true"></i>
-</a>

@@ -7,25 +7,23 @@
   <title>RANDPOWERSTATE — Digital Systems & IT Integration</title>
   <meta name="description" content="RANDPOWERSTATE designs, integrates, and manages secure digital platforms, IT automation, and AI-enabled solutions for modern businesses.">
   <meta name="keywords" content="digital systems, IT integration, automation, AI, cybersecurity, web systems">
-  <meta name="author" content="RANDPOWERSTATE (PTY) LTD">
-  <link rel="canonical" href="https://randpowerstate.co.za/">
-  <meta name="theme-color" content="#3b82f6">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Facebook, LinkedIn, WhatsApp, etc. -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://randpowerstate.co.za/">
+  <meta property="og:url" content="https://randpowerstate.co.za/index.html">
+  <meta property="og:site_name" content="RANDPOWERSTATE">
   <meta property="og:title" content="RANDPOWERSTATE — Digital Systems & IT Integration">
   <meta property="og:description" content="RANDPOWERSTATE designs, integrates, and manages secure digital platforms, IT automation, and AI-enabled solutions for modern businesses.">
-  <meta property="og:image" content="https://randpowerstate.co.za/assets/img/hero-bg.jpg">
-  <meta property="og:locale" content="en_ZA">
-  <meta property="og:site_name" content="RANDPOWERSTATE">
+  <meta property="og:image" content="https://randpowerstate.co.za/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://randpowerstate.co.za/">
+  <meta name="twitter:url" content="https://randpowerstate.co.za/index.html">
   <meta name="twitter:title" content="RANDPOWERSTATE — Digital Systems & IT Integration">
   <meta name="twitter:description" content="RANDPOWERSTATE designs, integrates, and manages secure digital platforms, IT automation, and AI-enabled solutions for modern businesses.">
-  <meta name="twitter:image" content="https://randpowerstate.co.za/assets/img/hero-bg.jpg">
+  <meta name="twitter:image" content="https://randpowerstate.co.za/assets/img/og-image.png">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -43,11 +41,38 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "RANDPOWERSTATE (PTY) LTD",
+    "image": "https://randpowerstate.co.za/assets/img/og-image.png",
+    "url": "https://randpowerstate.co.za/",
+    "telephone": "+27788149120",
+    "email": "info@randpowerstate.co.za",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6 Gunning Street",
+      "addressLocality": "Kimberley",
+      "addressRegion": "Northern Cape",
+      "postalCode": "8301",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -28.7307462,
+      "longitude": 24.7528374
+    },
+    "areaServed": "South Africa",
+    "description": "Digital systems, IT integration, automation, and cybersecurity for businesses in Kimberley and across South Africa."
+  }
+  </script>
 
 </head>
 
@@ -57,26 +82,23 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/logo.png" alt="RANDPOWERSTATE Logo">
         <h1 class="sitename">RANDPOWERSTATE</h1>
-        <span></span>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Home<br></a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
           <li><a href="insights.html">Insights</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="contact.html">Get Started</a>
 
     </div>
   </header>
@@ -84,1152 +106,354 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div class="hero-slider swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-          {
-            "loop": true,
-            "speed": 1000,
-            "effect": "fade",
-            "fadeEffect": { "crossFade": true },
-            "autoplay": { "delay": 6500, "disableOnInteraction": false },
-            "pagination": { "el": ".swiper-pagination", "clickable": true }
-          }
-        </script>
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <img src="assets/img/hero-bg.jpg" alt="">
-            <div class="container hero-slide-content">
-              <div class="row justify-content-center text-center">
-                <div class="col-xl-6 col-lg-8">
-                  <h2>We Build the Website, Software, and Systems Your Business Runs On<span>.</span></h2>
-                  <p>From your website and online bookings to the software that tracks stock, staff, and sales — we
-                    design it, connect it, and keep it running so your day-to-day work gets easier, not harder</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Slide 1 -->
-
-          <div class="swiper-slide">
-            <img src="assets/img/features-bg.jpg" alt="">
-            <div class="container hero-slide-content">
-              <div class="row justify-content-center text-center">
-                <div class="col-xl-6 col-lg-8">
-                  <h2>Stop Re-Typing the Same Information Twice<span>.</span></h2>
-                  <p>If a sale, booking, or invoice has to be entered into more than one system by hand, that's time
-                    and accuracy lost every single day. We connect the tools you already use — point of sale,
-                    accounting, bookings, CRM — so information flows between them automatically</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Slide 2 -->
-
-          <div class="swiper-slide">
-            <img src="assets/img/stats-img.jpg" alt="">
-            <div class="container hero-slide-content">
-              <div class="row justify-content-center text-center">
-                <div class="col-xl-6 col-lg-8">
-                  <h2>Your Systems, Protected From Day One<span>.</span></h2>
-                  <p>Weak passwords, unpatched software, and unprotected customer data are how small businesses get
-                    hurt. We build in the basics — secure logins, controlled access, regular updates, and backups —
-                    from the very first line of code, not as an afterthought once something goes wrong</p>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Slide 3 -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div><!-- End Hero Slider -->
-
-      <div class="container hero-capabilities">
-        <div class="row gy-4 justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="service-details.html#digital-platforms">Websites & Business Software</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="service-details.html#it-systems-integration">Connecting Your Existing Tools</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="service-details.html#ai-business-intelligence">AI Reporting & Smart Automation</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="service-details.html#cybersecurity-infrastructure">Cybersecurity & Data Protection</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="service-details.html#digital-platforms">Reliable IT Infrastructure & Support</a></h3>
-            </div>
-          </div>
+    <section id="hero" class="hero">
+      <div class="status-strip" data-aos="fade-up">
+        <span><span class="dot"></span> Systems Operational</span>
+        <span>Kimberley, South Africa</span>
+        <span>Est. Response &lt; 24h</span>
+      </div>
+      <div class="container hero-inner" data-aos="fade-up">
+        <span class="eyebrow"><i class="bi bi-shield-check"></i> Trusted by businesses across Kimberley & beyond</span>
+        <h1>Digital systems that keep your business <span class="accent">running, secure, and scaling</span>.</h1>
+        <p class="lead">We design, integrate, and manage secure digital platforms, automation, and AI-enabled
+          tools — built for real operations, not just online presence.</p>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn-rps btn-rps-primary">Get Started <i class="bi bi-arrow-right"></i></a>
+          <a href="case-studies.html" class="btn-rps btn-rps-outline">See Case Studies</a>
         </div>
       </div>
 
+      <div class="container hero-capabilities" data-aos="fade-up" data-aos-delay="100">
+        <div class="cap-card">
+          <i class="bi bi-window-stack"></i>
+          <span>Digital Platforms & Enterprise Web Systems</span>
+        </div>
+        <div class="cap-card">
+          <i class="bi bi-diagram-3"></i>
+          <span>IT Systems Integration & Automation</span>
+        </div>
+        <div class="cap-card">
+          <i class="bi bi-cpu"></i>
+          <span>AI-Enabled Business Intelligence</span>
+        </div>
+        <div class="cap-card">
+          <i class="bi bi-shield-lock"></i>
+          <span>Cybersecurity & Digital Risk Management</span>
+        </div>
+        <div class="cap-card">
+          <i class="bi bi-hdd-network"></i>
+          <span>Digital Infrastructure & Communications</span>
+        </div>
+      </div>
     </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="RANDPOWERSTATE team working on a digital systems project" loading="lazy">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>We Build Systems Your Business Can Actually Rely On</h3>
-            <p class="fst-italic">
-              A website that looks good but doesn't save you time isn't enough. We build the tools behind the scenes
-              too — so your business runs smoother, not just looks better online.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Websites, customer portals, and dashboards that are built
-                  to last — not just to launch.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Connecting the software you already use, and adding AI-powered
-                  reports so you can see what's happening in your business at a glance.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Keeping your data and systems protected, and your business
-                  running, with reliable IT support behind it.</span></li>
-            </ul>
-            <p>
-              Before we design anything, we ask what your business actually needs it to do day to day. That's what
-              shapes the plan — not what looks impressive in a demo. We work with businesses that want systems built
-              to last, and we stay involved after launch to keep things running as you grow.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /About Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+        <p class="clients-label">Businesses we've built and integrated systems for</p>
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
+              "autoplay": { "delay": 2500 },
               "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
+              "spaceBetween": 0,
               "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
+                "320": { "slidesPerView": 3, "spaceBetween": 40 },
+                "480": { "slidesPerView": 4, "spaceBetween": 60 },
+                "640": { "slidesPerView": 5, "spaceBetween": 80 },
+                "992": { "slidesPerView": 6, "spaceBetween": 100 }
               }
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt="Client logo 1" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt="Client logo 2" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt="Client logo 3" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt="Client logo 4" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt="Client logo 5" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt="Client logo 6" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt="Client logo 7" loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="Client logo 8" loading="lazy"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt="Client logo"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt="Client logo"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
     </section><!-- /Clients Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/features-bg.jpg" alt="Digital systems dashboard illustration" loading="lazy">
+    <!-- About Teaser Section -->
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+            <span class="tag-pill">Who We Are</span>
+            <h2 class="mt-3 mb-3">Systems-first, not just websites</h2>
+            <p class="text-muted">
+              We focus on designing and integrating secure, scalable digital systems that support real business
+              operations — not just online presence. Reliability, structure, and long-term digital capability come
+              first.
+            </p>
+            <a href="about.html" class="btn-rps btn-rps-outline mt-2">More about us <i class="bi bi-arrow-right"></i></a>
           </div>
-          <div class="col-lg-6">
-
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Built to Last, Not Just to Launch</h4>
-                <p>We plan for how your business will use the site or system a year from now, not just on launch day —
-                  so it can grow with you instead of needing to be rebuilt.</p>
+          <div class="col-lg-7">
+            <div class="about-panel">
+              <p class="mb-0">
+                Our approach is systems-first and process-driven — we work with businesses that value reliability,
+                structure, and long-term digital capability over quick, disposable fixes.
+              </p>
+              <div class="stat-inline-row">
+                <div><strong><span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>+</strong><span>Satisfied clients</span></div>
+                <div><strong><span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>+</strong><span>Projects delivered</span></div>
+                <div><strong><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span></strong><span>Team members</span></div>
               </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Less Retyping, Fewer Mistakes</h4>
-                <p>We connect the software you already use — like your point of sale, bookings, or accounting — so
-                  information updates automatically instead of being entered twice by hand.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Reports That Actually Tell You Something</h4>
-                <p>We set up AI-generated reports and dashboards that turn your day-to-day data into plain-language
-                  answers about sales, stock, or customers — no spreadsheet wrangling required.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Protected From the Start</h4>
-                <p>Secure logins, controlled access, and regular updates are part of the build from day one — so your
-                  systems and customer data stay safe, and stay online.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /Features Section -->
-
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Why Choose Us</h2>
-        <p>What Working With Us Actually Looks Like</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-people"></i>
-              </div>
-              <h3>One Team, Start to Finish</h3>
-              <p>No handing off between a web designer, a freelance developer, and a separate "IT guy." We design,
-                build, connect, and support it all ourselves.</p>
-            </div>
-          </div><!-- End Why Us Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <h3>Built Around Your Business</h3>
-              <p>Not a recycled template. Every site or system starts with how your team actually works, so it fits
-                from day one instead of forcing you to adapt to it.</p>
-            </div>
-          </div><!-- End Why Us Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h3>Security Isn't an Upsell</h3>
-              <p>Secure logins, access control, and backups are part of every build from the start — not something
-                you get asked to pay extra for after the fact.</p>
-            </div>
-          </div><!-- End Why Us Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-arrow-repeat"></i>
-              </div>
-              <h3>We Don't Disappear After Launch</h3>
-              <p>Ongoing support, monitoring, and updates are part of how we work — not a separate contract you have
-                to chase down later.</p>
-            </div>
-          </div><!-- End Why Us Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Why Choose Us Section -->
-
-    <!-- Process Section -->
-    <section id="process" class="process section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>How We Work</h2>
-        <p>Our Process</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="process-item">
-              <span class="process-number">01</span>
-              <i class="bi bi-search"></i>
-              <h4>We Look at How You Work Today</h4>
-              <p>We walk through what you're using now, where things slow down or go wrong, and what's actually
-                costing you time — before we suggest anything.</p>
-            </div>
-          </div><!-- End Process Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="process-item">
-              <span class="process-number">02</span>
-              <i class="bi bi-pencil-square"></i>
-              <h4>We Plan It Around Your Team</h4>
-              <p>We map out exactly what will be built, how it'll be kept secure, and how it'll roll out — in a way
-                that fits how your team actually works day to day.</p>
-            </div>
-          </div><!-- End Process Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="process-item">
-              <span class="process-number">03</span>
-              <i class="bi bi-gear"></i>
-              <h4>We Build It Without Disrupting You</h4>
-              <p>We build and test everything in stages, and connect it to your existing tools, so your business
-                keeps running normally the whole time — no shutting down to switch over.</p>
-            </div>
-          </div><!-- End Process Item -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="process-item">
-              <span class="process-number">04</span>
-              <i class="bi bi-life-preserver"></i>
-              <h4>We Stay On After Launch</h4>
-              <p>We keep an eye on the system, apply updates, and fix or adjust things as your business changes —
-                so it doesn't quietly fall out of date.</p>
-            </div>
-          </div><!-- End Process Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Process Section -->
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Check our Services</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-activity"></i>
-              </div>
-              <a href="service-details.html#digital-platforms" class="stretched-link">
-                <h3>Websites & Business Software</h3>
-              </a>
-              <p>Your public website, plus the tools your team uses behind the scenes — staff portals, dashboards, and
-                secure places to store and share documents — all built to keep working for years, not just months.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-broadcast"></i>
-              </div>
-              <a href="service-details.html#it-systems-integration" class="stretched-link">
-                <h3>Connecting Your Existing Tools</h3>
-              </a>
-              <p>If your customer database, accounting software, and booking system don't talk to each other, someone
-                on your team is retyping the same information over and over. We connect them so it updates itself.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-easel"></i>
-              </div>
-              <a href="service-details.html#workflow-automation" class="stretched-link">
-                <h3>Automating Paperwork & Approvals</h3>
-              </a>
-              <p>We turn paper forms, email approval chains, and manual reports into automatic digital steps — so
-                things get signed off, logged, and reported without someone having to chase them.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="service-details.html#ai-business-intelligence" class="stretched-link">
-                <h3>AI Reporting & Smart Automation</h3>
-              </a>
-              <p>We set up AI tools that read your business data and give you plain-language answers — like which
-                products are slow-moving, or which time of month gets the most bookings — so decisions get easier.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="service-details.html#cybersecurity-infrastructure" class="stretched-link">
-                <h3>Cybersecurity & Ongoing IT Support</h3>
-              </a>
-              <p>We lock down passwords and access, keep software patched, and back up your data, then stay on call
-                to keep everything running — so a hack, outage, or lost laptop doesn't stop your business.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /Services Section -->
-
-    <!-- Packages Teaser Section -->
-    <section id="packages" class="services section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Packages</h2>
-        <p>Where Most Businesses Start</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-window"></i>
-              </div>
-              <h3>Starter</h3>
-              <p>A professional, mobile-friendly website with a contact form and Google Maps — the right starting
-                point if you don't have a solid online presence yet.</p>
-            </div>
-          </div><!-- End Package Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-diagram-3"></i>
-              </div>
-              <h3>Growth</h3>
-              <p>Everything in Starter, plus connecting your CRM, accounting, or booking tools, and staff dashboards
-                — for businesses ready to cut down on manual data entry.</p>
-            </div>
-          </div><!-- End Package Item -->
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-shield-lock"></i>
-              </div>
-              <h3>Complete</h3>
-              <p>Everything in Growth, plus AI-powered reporting, cybersecurity hardening, and an ongoing support
-                plan — for businesses that want it all handled.</p>
-            </div>
-          </div><!-- End Package Item -->
-
-        </div>
-
-        <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
-          <p class="mb-3">Every business is different, so pricing is scoped to what you actually need — no
-            one-size-fits-all packages.</p>
-          <a href="service-details.html#pricing"
-            style="display:inline-block; font-family: var(--heading-font); font-weight:500; font-size:16px; letter-spacing:1px; padding:12px 40px; border-radius:5px; border:2px solid var(--accent-color); color: var(--accent-color); transition:0.3s;"
-            onmouseover="this.style.background='var(--accent-color)'; this.style.color='var(--contrast-color)';"
-            onmouseout="this.style.background='transparent'; this.style.color='var(--accent-color)';">See Full Package Details</a>
-        </div>
-
-      </div>
-
-    </section><!-- /Packages Teaser Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="" loading="lazy">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Ready to Spend Less Time Fighting Your Own Systems?</h3>
-              <p>Whether it's a website that needs rebuilding, tools that don't talk to each other, or reports that
-                take too long to pull together — tell us where it hurts, and we'll show you what fixing it looks like.</p>
-              <a class="cta-btn" href="#contact">Get Started Today</a>
             </div>
           </div>
         </div>
       </div>
+    </section><!-- /About Teaser Section -->
 
-
-    </section><!-- /Call To Action Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Check our Portfolio</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/client-1.png" class="img-fluid" alt="Ok Express franchise storefront" loading="lazy">
-              <div class="portfolio-info">
-                <h4>Ok Express (franchise)</h4>
-                <p>4 Lennox Road, Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-1.png" title="App 1" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.okfoods.co.za/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/client-2.png" class="img-fluid" alt="Bootlegger Coffee Company franchise storefront" loading="lazy">
-              <div class="portfolio-info">
-                <h4>Bootlegger Coffee Company (franchise)</h4>
-                <p>4 Lennox Road, Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-2.png" title="Product 1"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.bootleggercoffee.coffee/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/client-3.png" class="img-fluid" alt="Astron Energy franchise forecourt" loading="lazy">
-              <div class="portfolio-info">
-                <h4><a href="case-study-astron-energy.html">Astron Energy (franchise)</a></h4>
-                <p>4 Lennox Road, Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-3.png" title="Branding 1"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://www.astronenergy.co.za/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/client-4.png" class="img-fluid" alt="Car & Bakkie City Kimberley dealership" loading="lazy">
-              <div class="portfolio-info">
-                <h4><a href="case-study-car-bakkie-city.html">Car & Bakkie City Kimberley</a></h4>
-                <p>4-10 Hall Street, Kimberley (Main Branch)</p>
-                <a href="assets/img/masonry-portfolio/client-4.png" title="App 2" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.carandbakkiecity.co.za/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/client-5.png" class="img-fluid" alt="Belmed Medical Center" loading="lazy">
-              <div class="portfolio-info">
-                <h4>Belmed Medical Center</h4>
-                <p>Shop 11D, Barkly Rd, Shoprite Centre,Homestead,Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-5.png" title="Product 2"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <!-- TODO: Belmed Medical Center has no public website yet — add the URL here when available -->
-                <a href="#" title="No website yet" aria-disabled="true"
-                  class="details-link todo-placeholder" onclick="return false;"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/client-6.png" class="img-fluid" alt="HafMed Clinics" loading="lazy">
-              <div class="portfolio-info">
-                <h4><a href="case-study-hafmed-clinics.html">HafMed Clinics</a></h4>
-                <p>101 Barkly Road,Gemdene,Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-6.png" title="Branding 2"
-                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <a href="https://hafmedclinics.co.za/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/client-7.png" class="img-fluid" alt="Ebbies Fashion House" loading="lazy">
-              <div class="portfolio-info">
-                <h4><a href="case-study-ebbies-fashion-house.html">Ebbies Fashion House</a></h4>
-                <p>42 Sidney Street, Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-7.png" title="App 3" data-gallery="portfolio-gallery-app"
-                  class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="https://www.ebbies.co.za/" title="More Details" class="details-link"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/client-8.png" class="img-fluid" alt="Rejuvenate IV Drip Bar" loading="lazy">
-              <div class="portfolio-info">
-                <h4>Rejuvenate IV Drip Bar</h4>
-                <p>101 Barkly Road, Kimberley</p>
-                <a href="assets/img/masonry-portfolio/client-8.png" title="Product 3"
-                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                    class="bi bi-zoom-in"></i></a>
-                <!-- TODO: Rejuvenate IV Drip Bar has no public website yet — add the URL here when available -->
-                <a href="#" title="No website yet" aria-disabled="true"
-                  class="details-link todo-placeholder" onclick="return false;"><i
-                    class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
+    <!-- Services Teaser Section -->
+    <section id="services" class="services section section-alt">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Services</span>
+        <h2>Everything your business needs to run on solid digital ground</h2>
+        <p>Five core capabilities, delivered as one connected system.</p>
       </div>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Case Studies</h2>
-        <p>Proof, Not Just Promises</p>
-      </div><!-- End Section Title -->
-
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="case-study-card">
-              <div class="case-study-card-logo">Astron Energy</div>
-              <p>"Working with them on our franchise location was seamless. Their attention to security and process
-                automation is top-notch."</p>
-              <span class="case-study-card-name">Nafiesa Akharwaray — Astron Energy</span>
-              <a href="case-study-astron-energy.html" class="case-study-card-link">Read the full case study &rarr;</a>
-            </div>
-          </div><!-- End Case Study Card -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="case-study-card">
-              <div class="case-study-card-logo">Car & Bakkie City</div>
-              <p>"They developed our website, maintain our social media and digital presence, assisted with
-                compliance, and ensure our digital security is always up to standard."</p>
-              <span class="case-study-card-name">Zakariya Jeena — Car & Bakkie City</span>
-              <a href="case-study-car-bakkie-city.html" class="case-study-card-link">Read the full case study &rarr;</a>
-            </div>
-          </div><!-- End Case Study Card -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="case-study-card">
-              <div class="case-study-card-logo">Ebbies Fashion House</div>
-              <p>"They manage our TikTok and overall digital presence, keeping our brand visible, engaging, and
-                relevant online."</p>
-              <span class="case-study-card-name">Anees Mohamed — Ebbies Fashion House</span>
-              <a href="case-study-ebbies-fashion-house.html" class="case-study-card-link">Read the full case study &rarr;</a>
-            </div>
-          </div><!-- End Case Study Card -->
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="case-study-card">
-              <div class="case-study-card-logo">HafMed Clinics</div>
-              <p>"They helped establish our website, enhance our digital presence, and ensure compliance, improving
-                both patient engagement and operational efficiency."</p>
-              <span class="case-study-card-name">Mohammed Haffejee — HafMed Clinics</span>
-              <a href="case-study-hafmed-clinics.html" class="case-study-card-link">Read the full case study &rarr;</a>
-            </div>
-          </div><!-- End Case Study Card -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Case Studies Section -->
-
-    <!-- Secondary Call To Action Section -->
-    <section id="call-to-action-secondary" class="call-to-action section dark-background">
-
-      <img src="assets/img/cta-bg.jpg" alt="" loading="lazy">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Like What You See in Our Portfolio?</h3>
-              <p>Every project above started the same way — a conversation about what wasn't working. Let's have
-                that conversation about your business next.</p>
-              <a class="cta-btn" href="#contact">Talk to Us</a>
-            </div>
+        <div class="bento-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="bento-item span-2 accent">
+            <div class="bento-icon"><i class="bi bi-activity"></i></div>
+            <h4>Digital Platforms & Web Systems</h4>
+            <p>Secure, scalable websites, portals, dashboards, and document management systems.</p>
+          </div>
+          <div class="bento-item">
+            <div class="bento-icon"><i class="bi bi-broadcast"></i></div>
+            <h4>IT Systems Integration</h4>
+            <p>Connected CRMs, ERPs, and analytics.</p>
+          </div>
+          <div class="bento-item">
+            <div class="bento-icon"><i class="bi bi-shield-lock"></i></div>
+            <h4>Cybersecurity & Infrastructure</h4>
+            <p>Hardened systems, reliable uptime.</p>
           </div>
         </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="services.html" class="btn-rps btn-rps-outline">See all services <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section><!-- /Services Teaser Section -->
+
+    <!-- Case Studies Teaser Section -->
+    <section id="case-studies" class="case-studies-teaser section">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Case Studies</span>
+        <h2>Real businesses, real systems, real results</h2>
+        <p>A look at how we've helped franchises, clinics, and independent businesses run more reliably.</p>
       </div>
 
-    </section><!-- /Secondary Call To Action Section -->
+      <div class="container">
+        <div class="case-grid" data-aos="fade-up" data-aos-delay="100">
+          <a href="case-studies.html#ok-express" class="case-card">
+            <div class="case-card-logo"><img src="assets/img/masonry-portfolio/client-1.png" alt="Ok Express logo"></div>
+            <div class="case-card-body">
+              <span class="tag-pill">Franchise / Retail</span>
+              <h4>Ok Express</h4>
+              <p>A digital presence and system foundation built to match an established franchise operation.</p>
+              <span class="case-card-link">Read case study <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="case-studies.html#car-bakkie-city" class="case-card">
+            <div class="case-card-logo"><img src="assets/img/masonry-portfolio/client-4.png" alt="Car & Bakkie City logo"></div>
+            <div class="case-card-body">
+              <span class="tag-pill">Automotive</span>
+              <h4>Car & Bakkie City Kimberley</h4>
+              <p>Website, digital presence, and compliance support for a multi-branch dealership.</p>
+              <span class="case-card-link">Read case study <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="case-studies.html#hafmed-clinics" class="case-card">
+            <div class="case-card-logo"><img src="assets/img/masonry-portfolio/client-6.png" alt="HafMed Clinics logo"></div>
+            <div class="case-card-body">
+              <span class="tag-pill">Healthcare</span>
+              <h4>HafMed Clinics</h4>
+              <p>A patient-facing web presence and compliance-aware system setup for a growing clinic group.</p>
+              <span class="case-card-link">Read case study <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="case-studies.html" class="btn-rps btn-rps-outline">View all case studies <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section><!-- /Case Studies Teaser Section -->
+
+    <!-- Insights Teaser Section -->
+    <section id="insights" class="section section-alt">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Insights</span>
+        <h2>The case for going digital</h2>
+        <p>Plain-language briefings on why "just a website" stopped being enough.</p>
+      </div>
+
+      <div class="container">
+        <div class="briefing-grid" data-aos="fade-up" data-aos-delay="100">
+          <a href="insight-digital-systems-basics.html" class="briefing-card">
+            <span class="briefing-tag">Digital Systems</span>
+            <h3>Why "Just a Website" Isn't Enough Anymore</h3>
+            <p>A website presents information. A system moves it — here's the difference in practice.</p>
+            <div class="briefing-meta">
+              <span>BRIEF-001 · 5 min</span>
+              <span class="read-link">Read <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="insight-it-integration-signs.html" class="briefing-card">
+            <span class="briefing-tag">IT Integration</span>
+            <h3>5 Signs You've Outgrown Your Current Systems</h3>
+            <p>Most businesses get pushed into fixing their systems by friction. Here's how to spot it first.</p>
+            <div class="briefing-meta">
+              <span>BRIEF-002 · 4 min</span>
+              <span class="read-link">Read <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+          <a href="insight-popia-compliance-smes.html" class="briefing-card">
+            <span class="briefing-tag">Compliance & Security</span>
+            <h3>POPIA Basics for Small Businesses</h3>
+            <p>Compliance sounds like a big-company problem until a customer asks about their data.</p>
+            <div class="briefing-meta">
+              <span>BRIEF-003 · 6 min</span>
+              <span class="read-link">Read <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+          <a href="insights.html" class="btn-rps btn-rps-outline">All insights <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </section><!-- /Insights Teaser Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 align-items-center justify-content-between">
-
-          <div class="col-lg-5">
-            <img src="assets/img/stats-img.jpg" alt="RANDPOWERSTATE project impact" class="img-fluid" loading="lazy">
-          </div>
-
-          <div class="col-lg-6">
-
-            <h3 class="fw-bold fs-2 mb-3">A Track Record You Can Check</h3>
-            <p>
-              These aren't abstract numbers — they're real websites, connected systems, and support hours delivered
-              to businesses like the ones in our portfolio below, from franchise storefronts to medical clinics.
-            </p>
-
-            <div class="row gy-4">
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Satisfied Clients</strong> <span>across various industries</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Projects Delivered</strong> <span>from websites to integrated systems</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-headset flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Hours of Support</strong> <span>ensuring operational reliability</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-6">
-                <div class="stats-item d-flex">
-                  <i class="bi bi-people flex-shrink-0"></i>
-                  <div>
-                    <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
-                      class="purecounter"></span>
-                    <p><strong>Dedicated Team Members</strong> <span>focused on client success</span></p>
-                  </div>
-                </div>
-              </div><!-- End Stats Item -->
-
-            </div>
-
-          </div>
-
-        </div>
-
+    <section id="stats" class="stats section section-dark">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Proven Impact</span>
+        <h2>Digital systems that deliver measurable results</h2>
       </div>
-
-    </section>
-    <!-- /Stats Section -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="stats-band">
+          <div class="stat-tile">
+            <i class="bi bi-emoji-smile"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Satisfied Clients</span>
+            <span class="sub">across various industries</span>
+          </div>
+          <div class="stat-tile">
+            <i class="bi bi-journal-richtext"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Projects Delivered</span>
+            <span class="sub">from websites to integrated systems</span>
+          </div>
+          <div class="stat-tile">
+            <i class="bi bi-headset"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="1" class="purecounter"></span>+</span>
+            <span class="label">Hours of Support</span>
+            <span class="sub">ensuring operational reliability</span>
+          </div>
+          <div class="stat-tile">
+            <i class="bi bi-people"></i>
+            <span class="num"><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span></span>
+            <span class="label">Dedicated Team Members</span>
+            <span class="sub">focused on client success</span>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Stats Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section dark-background">
-
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="" loading="lazy">
-
+    <section id="testimonials" class="testimonials section">
+      <div class="section-header" data-aos="fade-up">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What our clients say</h2>
+      </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
         {
           "loop": true,
           "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
+          "autoplay": { "delay": 5000 },
+          "slidesPerView": 1,
+          "spaceBetween": 24,
+          "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+          "breakpoints": {
+            "768": { "slidesPerView": 2 },
+            "1200": { "slidesPerView": 3 }
           }
         }
       </script>
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i> They developed our website, maintain our social media
+                  and digital presence, assisted with compliance, and ensure our digital security is always up to
+                  standard. <i class="bi bi-quote quote-icon-right"></i></p>
                 <h3>Zakariya Jeena</h3>
-                <h4>Car &amp; Bakkie City Kimberley</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>They developed our website, maintain our social media and digital presence, assisted with
-                    compliance, and ensure our digital security is always up to standard.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                <h4>Car & Bakkie City Kimberley</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i> They manage our TikTok and overall digital presence,
+                  keeping our brand visible, engaging, and relevant online. <i class="bi bi-quote quote-icon-right"></i></p>
                 <h3>Anees Mohamed</h3>
                 <h4>Ebbies Fashion House</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>They manage our TikTok and overall digital presence, keeping our brand visible, engaging, and
-                    relevant online.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i> They helped establish our website, enhance our digital
+                  presence, and ensure compliance, improving both patient engagement and operational efficiency.
+                  <i class="bi bi-quote quote-icon-right"></i></p>
                 <h3>Mohammed Haffejee</h3>
-                <h4>Hafmed Clinics</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>They helped establish our website, enhance our digital presence, and ensure compliance,
-                    improving both patient engagement and operational efficiency.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
+                <h4>HafMed Clinics</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
+                <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                <p><i class="bi bi-quote quote-icon-left"></i> Working with them on our franchise location was
+                  seamless. Their attention to security and process automation is top-notch. <i class="bi bi-quote quote-icon-right"></i></p>
                 <h3>Nafiesa Akharwaray</h3>
                 <h4>Astron Energy</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Working with them on our franchise location was seamless. Their attention to security and
-                    process automation is top-notch.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
     </section><!-- /Testimonials Section -->
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Common Questions</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-
-            <div class="accordion" id="faqAccordion">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
-                    What industries do you work with?
-                  </button>
-                </h3>
-                <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    We work with businesses across retail, hospitality, healthcare, fuel and franchise operations,
-                    and professional services — anywhere reliable digital systems and operational efficiency
-                    matter.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
-                    How long does a typical project take?
-                  </button>
-                </h3>
-                <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    It depends on scope. A standard business website typically takes a few weeks, while systems
-                    integration or automation projects can run longer depending on how many tools and workflows are
-                    involved. We scope timelines with you before work begins.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
-                    Do you provide ongoing support after launch?
-                  </button>
-                </h3>
-                <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Yes. We offer ongoing maintenance, monitoring, and support so your systems keep running
-                    reliably and stay up to date as your business grows.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
-                    Can you integrate with our existing CRM, ERP, or other tools?
-                  </button>
-                </h3>
-                <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    In most cases, yes. We assess your current tools during the discovery phase and design
-                    integrations that reduce manual work rather than replacing systems that already work well for
-                    you.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
-                    How do you handle data security?
-                  </button>
-                </h3>
-                <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    We apply cybersecurity fundamentals and infrastructure best practices — secure configuration,
-                    access control, and regular updates — throughout every system we design or integrate, not as an
-                    afterthought.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">
-                    Do you only work with businesses in Kimberley?
-                  </button>
-                </h3>
-                <div id="faq-6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    We're based in Kimberley, Northern Cape, and most of our current clients are local, but our
-                    services are delivered digitally and can support businesses anywhere in South Africa.
-                  </div>
-                </div>
-              </div><!-- End FAQ Item -->
-
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Transform your business with reliable digital systems</h3>
+              <p>We help businesses build secure, scalable platforms, integrate systems, automate workflows, and
+                implement AI-driven insights — all while keeping your operations safe and resilient.</p>
+              <a class="cta-btn" href="contact.html">Get Started Today</a>
             </div>
-
           </div>
         </div>
-
       </div>
-
-    </section><!-- /FAQ Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="mb-4 map-panel map-panel-lg" data-aos="fade-up" data-aos-delay="200">
-          <span class="map-label">Find Us</span>
-          <iframe class="map-frame"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357.6240440591015!2d24.7528374!3d-28.7307462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9b1afa545eed8b%3A0x6788db541e2b4ca7!2s6%20Gunning%20St%2C%20West%20End%2C%20Kimberley%2C%208301!5e0!3m2!1sen!2sza!4v1704384000000!5m2!1sen!2sza"
-            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>6 Gunning Street, Kimberley, Northern Cape, South Africa</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+27 78 814 9120</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@randpowerstate.co.za</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form class="mailto-contact-form" data-aos="fade-up"
-              data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="contact-name" class="form-label visually-hidden">Your Name</label>
-                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your Name"
-                    required>
-                </div>
-
-                <div class="col-md-6">
-                  <label for="contact-email" class="form-label visually-hidden">Your Email</label>
-                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="Your Email"
-                    required>
-                </div>
-
-                <div class="col-md-12">
-                  <label for="contact-subject" class="form-label visually-hidden">Subject</label>
-                  <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Subject"
-                    required>
-                </div>
-
-                <div class="col-md-12">
-                  <label for="contact-message" class="form-label visually-hidden">Message</label>
-                  <textarea id="contact-message" name="message" class="form-control" rows="6"
-                    placeholder="Message" required></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Sending</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message"></div>
-                  <p class="small text-muted mb-3">
-                    This site has no server backend, so sending opens your email app with the message
-                    pre-filled to <strong>info@randpowerstate.co.za</strong> — just hit send from there.
-                  </p>
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section><!-- /Call To Action Section -->
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-
+  <footer id="footer" class="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
@@ -1243,90 +467,69 @@
               <p class="mt-3"><strong>Phone:</strong> <span>+27 78 814 9120</span></p>
               <p><strong>Email:</strong> <span>info@randpowerstate.co.za</span></p>
             </div>
-            <!-- TODO: add real social media URLs below when accounts are set up -->
             <div class="social-links d-flex mt-4">
-              <a href="#" aria-label="Twitter / X (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="Facebook (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn (link not yet set)" class="todo-placeholder" onclick="return false;"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/27788149120" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="tel:+27788149120" aria-label="Call us"><i class="bi bi-telephone"></i></a>
+              <a href="mailto:info@randpowerstate.co.za" aria-label="Email us"><i class="bi bi-envelope"></i></a>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero"> Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="about.html"> About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#services"> Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio"> Portfolio</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="insights.html"> Insights</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="careers.html"> Careers</a></li>
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Services</a></li>
+              <li><a href="case-studies.html"><i class="bi bi-chevron-right"></i> Case Studies</a></li>
+              <li><a href="insights.html"><i class="bi bi-chevron-right"></i> Insights</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#digital-platforms"> Digital Platforms & Web Systems</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#it-systems-integration"> IT Systems Integration</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#workflow-automation"> Workflow Automation & Process Digitisation</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#ai-business-intelligence"> AI-Enabled Business Intelligence</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="service-details.html#cybersecurity-infrastructure"> Cybersecurity & Infrastructure Support</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Digital Platforms & Web Systems</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> IT Systems Integration</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Workflow Automation</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> AI-Enabled Business Intelligence</a></li>
+              <li><a href="services.html"><i class="bi bi-chevron-right"></i> Cybersecurity & Infrastructure</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-12 footer-newsletter">
             <h4>RANDPOWERSTATE (PTY) LTD</h4>
-            <p>The future depend on you!</p>
-
+            <p>The future depends on you.</p>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="copyright">
-      <div class="container d-flex flex-wrap justify-content-center justify-content-md-between align-items-center gap-2">
-        <p class="mb-0">© <span>Copyright</span> <strong class="px-1 sitename">RANDPOWERSTATE (PTY) LTD</strong> <span>All Rights
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">RANDPOWERSTATE (PTY) LTD</strong> <span>All Rights
             Reserved</span></p>
-        <p class="mb-0 copyright-legal-links">
-          <a href="terms-of-service.html">Terms of Service</a>
-          <span class="divider">/</span>
-          <a href="privacy-policy.html">Privacy Policy</a>
-        </p>
       </div>
     </div>
-
   </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/27788149120?text=Hi%20RANDPOWERSTATE%2C%20I%27d%20like%20to%20find%20out%20more%20about%20your%20services."
+    target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/contact-form.js"></script>
 
 </body>
 
 </html>
-
-<!-- WhatsApp Chat Overlay -->
-<!-- Opens WhatsApp chat with the configured phone number -->
-<a href="https://wa.me/27788149120?text=Hello%20Randpowerstate" target="_blank" rel="noopener noreferrer"
-  class="whatsapp-float" aria-label="Chat on WhatsApp">
-  <span class="whatsapp-label">Chat on WhatsApp</span>
-  <i class="bi bi-whatsapp" aria-hidden="true"></i>
-</a>
