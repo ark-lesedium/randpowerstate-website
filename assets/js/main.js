@@ -154,6 +154,79 @@
   }
 
   /**
+   * Text reveal — splits headline text into per-word masks that rise
+   * into place, staggered. Hero/page titles ([data-reveal="load"]) play
+   * as soon as the page paints; everything else plays once scrolled
+   * into view.
+   */
+  function splitIntoWords(node) {
+    // Snapshot first: replaceWith() below mutates the live childNodes list,
+    // which would otherwise desync forEach's iteration and scramble word order.
+    Array.from(node.childNodes).forEach(child => {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const frag = document.createDocumentFragment();
+        child.textContent.split(/(\s+)/).forEach(chunk => {
+          if (chunk === '') return;
+          if (/^\s+$/.test(chunk)) {
+            frag.appendChild(document.createTextNode(chunk));
+            return;
+          }
+          const mask = document.createElement('span');
+          mask.className = 'split-mask';
+          const word = document.createElement('span');
+          word.className = 'split-word';
+          word.textContent = chunk;
+          mask.appendChild(word);
+          frag.appendChild(mask);
+        });
+        child.replaceWith(frag);
+      } else if (child.nodeType === Node.ELEMENT_NODE) {
+        splitIntoWords(child);
+      }
+    });
+  }
+
+  function initTextReveal() {
+    const targets = document.querySelectorAll('.reveal-text');
+    if (!targets.length) return;
+
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    targets.forEach(el => {
+      splitIntoWords(el);
+
+      if (reduceMotion) {
+        el.classList.add('in-view');
+        return;
+      }
+
+      el.querySelectorAll('.split-word').forEach((word, i) => {
+        word.style.transitionDelay = (i * 45) + 'ms';
+      });
+
+      if (el.dataset.reveal === 'load') {
+        // AOS reveals its [data-aos] containers on the window "load" event —
+        // wait for the same event (plus a beat) so words don't rise while
+        // still trapped inside a still-hidden AOS parent.
+        window.addEventListener('load', () => {
+          setTimeout(() => el.classList.add('in-view'), 200);
+        }, { once: true });
+      } else {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              setTimeout(() => el.classList.add('in-view'), 120);
+              observer.unobserve(el);
+            }
+          });
+        }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+        observer.observe(el);
+      }
+    });
+  }
+  document.addEventListener('DOMContentLoaded', initTextReveal);
+
+  /**
    * FAQ accordion (contact.html)
    */
   document.querySelectorAll('.faq-item').forEach(item => {
