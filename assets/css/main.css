@@ -561,10 +561,7 @@ body.scrolled #header {
 }
 
 .hero h1 .accent {
-  background: linear-gradient(135deg, #7dd3fc 0%, #a5b4fc 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #7dd3fc;
 }
 
 /* =========================================================
@@ -590,14 +587,6 @@ body.scrolled #header {
 .reveal-text.in-view .split-word {
   transform: translateY(0);
   opacity: 1;
-}
-
-/* Keep the gradient accent painting per-word once the text is split */
-.hero h1 .accent .split-word {
-  background: inherit;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1956,54 +1945,9 @@ body.scrolled #header {
   vertical-align: middle;
 }
 
-/* =========================================================
-   Content preview placeholders (case studies — no fake media,
-   just an honest "sample available" tile)
-   ========================================================= */
-.content-preview-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 4px 0 28px;
-}
-
-.content-preview-tile {
-  width: 148px;
-  aspect-ratio: 3 / 4;
-  border-radius: var(--radius-md);
-  background: var(--color-bg-alt);
-  border: 1.5px dashed var(--color-border-hover);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 14px;
-  text-align: center;
-}
-
-.content-preview-tile i {
-  font-size: 1.6rem;
-  color: var(--color-primary-dark);
-}
-
-.content-preview-tile span {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.content-preview-tile small {
-  font-size: 0.7rem;
-  color: var(--color-text-muted);
-}
-
 @media (max-width: 767px) {
   .case-study-body {
     grid-template-columns: 1fr;
-  }
-  .content-preview-tile {
-    width: 128px;
   }
 }
 
