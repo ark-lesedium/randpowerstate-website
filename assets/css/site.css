@@ -714,6 +714,15 @@ html.is-preloading .preloader { display: flex; }
 .preloader .name small { display: block; margin-top: 14px; font: 500 12px var(--mono); letter-spacing: .14em; color: #7d8aa8; }
 .preloader .count { font-family: var(--display); font-stretch: 120%; font-weight: 800; font-size: clamp(80px, 16vw, 260px); line-height: .8; letter-spacing: -0.06em; font-variant-numeric: tabular-nums; }
 .preloader .bar { position: absolute; left: 0; bottom: 0; height: 4px; width: 100%; background: var(--blue); transform: scaleX(0); transform-origin: left; }
+.preloader .name { min-width: 0; }
+.preloader .name small { white-space: nowrap; }
+.preloader .count { flex: none; white-space: nowrap; }
+/* phones: stack the name over a counter sized to the screen, so "100" never runs off the edge */
+@media (max-width: 640px) {
+  .preloader .inner { flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: clamp(20px, 4vh, 36px); padding-bottom: calc(clamp(28px, 6vh, 56px) + env(safe-area-inset-bottom)); }
+  .preloader .name { font-size: clamp(26px, 8vw, 40px); }
+  .preloader .count { font-size: min(36vw, 30vh); line-height: .78; margin-left: -.04em; }
+}
 
 /* ---------- lightbox ---------- */
 .lb { position: fixed; inset: 0; z-index: 500; background: rgba(3, 11, 28, .96); display: none; align-items: center; justify-content: center; padding: 72px 16px 24px; }
