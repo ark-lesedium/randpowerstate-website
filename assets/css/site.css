@@ -207,7 +207,7 @@ section { position: relative; padding-block: clamp(80px, 11vw, 170px); }
 /* hairline that fades in from the edges along the bottom of the hero */
 .hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(168, 192, 255, .35), transparent); }
 .hero-top { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; flex: 1; position: relative; z-index: 1; }
-.hero h1 { color: #fff; font-size: clamp(40px, 5.3vw, 94px); line-height: .94; letter-spacing: -0.04em; max-width: 16ch; text-shadow: 0 2px 40px rgba(3, 11, 28, .6); }
+.hero h1 { color: #fff; font-size: clamp(40px, 5.3vw, 94px); line-height: .94; letter-spacing: -0.04em; max-width: 16ch; }
 .hero h1 .l2 { color: var(--blue-2); }
 /* a slow glint travels across the accent words (delays set per word in site.js) */
 .has-motion:not(.no-motion) .hero h1 .l2 .swi { background: linear-gradient(100deg, var(--blue-2) 35%, #e6ecff 50%, var(--blue-2) 65%) 0 0 / 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: glint 7s var(--ease) infinite; }
