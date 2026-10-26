@@ -276,7 +276,7 @@
     var a = e.target.closest("a[href]");
     if (!a || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || a.target === "_blank" || a.hasAttribute("download")) return;
     var href = a.getAttribute("href");
-    if (!href || href.charAt(0) === "#" || /^(mailto|tel|https?):/i.test(href) || !/\.html(#.*)?$/.test(href)) return;
+    if (!href || href.charAt(0) === "#" || /^(mailto|tel|https?):/i.test(href) || !/(\.html|^\/)(#.*)?$/.test(href)) return;
     e.preventDefault();
     try { sessionStorage.setItem("rps-pt", "1"); } catch (err) {}
     gsap.set(pt, { transformOrigin: "bottom" });

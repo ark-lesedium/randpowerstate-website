@@ -7,7 +7,11 @@ Company site for RANDPOWERSTATE (PTY) LTD, served at randpowerstate.co.za via Gi
 - `about.html`, `services.html`, `case-studies.html` (8 clients, filterable), `insights.html`
 - `insight-*.html`: three plain-language briefs
 - `contact.html`: WhatsApp / call / email, mailto form, map, FAQ
-- `privacy-policy.html`, `terms-of-service.html`, `404.html` (root-absolute links, since Pages serves it for any missing path)
+- `privacy-policy.html`, `terms-of-service.html`, `404.html` (root-absolute links, since Pages serves it for any missing path; it is `noindex`, lists the services, and forwards known old or mistyped paths to the right page)
+- Redirect stubs for URLs Google indexed from older versions of the site: `privacy-policy/`, `terms-of-service/`, `privacy.html`, `terms.html`, `careers.html`, `service-details.html`, `case-study-*.html`. Keep them; deleting one turns its search result back into a 404.
+
+## SEO
+Every page carries a title, description, canonical, Open Graph tags and JSON-LD (`Organization`/`LocalBusiness`, breadcrumbs, `Article` on briefs, `FAQPage` on contact, services catalogue). When adding a page, copy that head block and add the URL to `sitemap.xml` with a fresh `<lastmod>`.
 
 ## Assets
 - `assets/css/site.css`: navy editorial design system (square edges, boxy hairline grid), shared with the founder's portfolio
